@@ -1,0 +1,77 @@
+<template>
+    <div class="index">
+            <NavBar></NavBar>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../assets/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/3.jpg" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+</template>
+<style src="../views/swiper.min.css"></style>
+<script src="../views/swiper.min.js"></script>
+<script>
+    import NavBar from "../components/NavBar";
+    import Swiper from "../views/swiper.min.js";
+    export default {
+        components: {
+            NavBar
+        }
+    }
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+<style scoped>
+    @import "../views/swiper.min.css";
+    .index {}
+    
+    body {
+        position: absolute;
+        height: 100%;
+    }
+    
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 507px;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+</style>

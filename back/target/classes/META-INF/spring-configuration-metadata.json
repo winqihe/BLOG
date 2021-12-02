@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "markerhub.jwt",
+      "type": "com.blog.util.JwtUtils",
+      "sourceType": "com.blog.util.JwtUtils"
+    }
+  ],
+  "properties": [
+    {
+      "name": "markerhub.jwt.expire",
+      "type": "java.lang.Long",
+      "sourceType": "com.blog.util.JwtUtils",
+      "defaultValue": 0
+    },
+    {
+      "name": "markerhub.jwt.header",
+      "type": "java.lang.String",
+      "sourceType": "com.blog.util.JwtUtils"
+    },
+    {
+      "name": "markerhub.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.blog.util.JwtUtils"
+    }
+  ],
+  "hints": []
+}
